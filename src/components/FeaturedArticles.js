@@ -34,7 +34,10 @@ function FeaturedArticles() {
                     <ArticleCard key={index} data={article} />
                 ))}
             </div>
-            <a href="#" className="btn">See all articles</a>
+            {/* FIX: replaced <a href="#"> with <button> */}
+            <button className="btn" onClick={() => alert("Redirect to all articles")}>
+                See all articles
+            </button>
         </section>
     );
 }

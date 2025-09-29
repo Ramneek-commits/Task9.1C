@@ -34,7 +34,10 @@ function FeaturedTutorials() {
                     <TutorialCard key={index} data={tutorial} />
                 ))}
             </div>
-            <a href="#" className="btn">See all tutorials</a>
+            {/* FIX: replaced <a href="#"> with <button> */}
+            <button className="btn" onClick={() => alert("Redirect to all tutorials")}>
+                See all tutorials
+            </button>
         </section>
     );
 }
